@@ -1,74 +1,111 @@
-# ReadmeMaker
+# 📘 ReadmeMaker
 
-## 📋 Description
+![Python](https://img.shields.io/badge/Python-3.12%2B-blue?logo=python\&logoColor=white)
+![License](https://img.shields.io/github/license/Adityaadpandey/ReadmeMaker?style=flat-square)
+![Issues](https://img.shields.io/github/issues/Adityaadpandey/ReadmeMaker?style=flat-square)
+![Stars](https://img.shields.io/github/stars/Adityaadpandey/ReadmeMaker?style=flat-square)
+![Forks](https://img.shields.io/github/forks/Adityaadpandey/ReadmeMaker?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/Adityaadpandey/ReadmeMaker?style=flat-square)
 
-ReadmeMaker is a Python-based tool that generates professional README.md files based on the project structure, configuration files, and dependencies present in a given repository. It analyzes key features, technology stack, installation instructions, usage guidelines, project structure, testing details, contributing guidelines, and licensing information to create comprehensive README files.
+---
+
+## 📄 Overview
+
+**ReadmeMaker** is a Python-powered CLI tool that automatically generates clean, professional `README.md` files by analyzing your project's codebase, configurations, and dependencies.
+
+It’s perfect for developers who want well-documented repos without spending hours writing them.
+
+---
 
 ## ✨ Features
 
-- **Automated README Generation**: ReadmeMaker creates professional README.md files by analyzing the project codebase.
-- **Customization Options**: Provides configuration options for generating tailored READMEs according to specific requirements.
-- **Multi-language Support**: Supports multiple programming languages and frameworks.
+* ✅ **Automated README Generation** — Creates `README.md` files by analyzing your repo.
+* 🛠 **Customizable Output** — Fine-tune output using configs.
+* 🌐 **Multi-language Support** — Works with various programming languages & frameworks.
+
+---
 
 ## 🚀 Tech Stack
 
-### Languages
-- Python
+### 🧑‍💻 Languages
 
-### Frameworks / Libraries
-- Gitpython
-- Ollama
+* Python
+
+### 📦 Libraries
+
+* [GitPython](https://github.com/gitpython-developers/GitPython)
+* [Ollama](https://github.com/ollama/ollama)
+
+---
 
 ## 📋 Prerequisites
 
-To use ReadmeMaker, you need to have Python (version 3.12 or later) installed on your system.
+* Python **3.12+** must be installed.
 
-## 🛠️ Installation
+---
 
-1. Clone the repository:
+## 🛠 Installation
 
 ```bash
+# Clone the repo
 git clone https://github.com/Adityaadpandey/ReadmeMaker.git
 cd ReadmeMaker
-```
 
-2. Install project dependencies using pip:
-
-```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-3. Use the Python script to generate a README.md file for your repository. Run `python main.py --help` for detailed usage instructions.
+---
 
-## 🏃‍♂️ Usage
-
-To create a README file, navigate to the root directory of your project and execute:
+## 🚀 Usage
 
 ```bash
 python main.py --repo [your-repository-url]
 ```
 
-Replace `[your-repository-url]` with the URL of the repository you want to generate a README for.
+📌 Replace `[your-repository-url]` with the URL of the repository you'd like to analyze.
+
+For full options:
+
+```bash
+python main.py --help
+```
+
+---
 
 ## 📁 Project Structure
 
-The ReadmeMaker project structure is organized as follows:
-- **main.py**: The main script that generates the README.md file.
-- **pyproject.toml**: Configuration and dependency management file for Python projects.
-- Other relevant configuration, source, test, and documentation files can be added based on the requirements of the analyzed repository.
+```
+ReadmeMaker/
+├── main.py              # Main script
+├── pyproject.toml       # Project & dependency config
+├── requirements.txt     # Python dependencies
+└── ...                  # Additional modules and configs
+```
+
+---
 
 ## 🧪 Testing
 
-Testing instructions are not available as no test files were found in the project.
+> ⚠️ No test files currently available. Testing support will be added in future updates.
+
+---
 
 ## 🤝 Contributing
 
-Contributions to ReadmeMaker are welcome! Please review the CONTRIBUTING.md file for guidelines on how to contribute.
+We ❤️ contributions!
+Please check out [CONTRIBUTING.md](CONTRIBUTING.md) for how to get started.
 
-## 📄 License
+---
 
-This project is licensed under the MIT License. For more information, see the LICENSE file included with this repository.
+## 📜 License
+
+Licensed under the [MIT License](LICENSE).
+
+---
 
 ## 👨‍💻 Author
 
-Made with ❤️ by KIMI
+Made with ❤️ by **KIMI**
+
+---
