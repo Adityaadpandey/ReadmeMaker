@@ -583,7 +583,7 @@ class EnhancedProjectAnalyzer:
     def analyze_docker(self):
         """Enhanced Docker analysis."""
         dockerfile = self.repo_dir / 'Dockerfile'
-        compose_files = ['docker-compose.yml', 'docker-compose.yaml', 'compose.yml', 'compose.yaml']
+        compose_files = ['docker-compose.yml', 'docker-compose.yaml', 'compose.yml', 'compose.yaml','docker-compose.yaml']
 
         if dockerfile.exists():
             self.project_data['has_docker'] = True
@@ -1278,7 +1278,7 @@ def generate_comprehensive_readme(analyzer: EnhancedProjectAnalyzer, key_files: 
 
     try:
         # Use longer timeout for complex projects
-        timeout = 600 if analyzer.project_data['complexity_score'] > 50 else 300
+        timeout = 1600 if analyzer.project_data['complexity_score'] > 50 else 800
 
         result = subprocess.run(
             ["ollama", "run", model],

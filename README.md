@@ -1,12 +1,12 @@
 # work
 
-**work** is a lightweight, command‑line tool that scans any codebase, extracts key metadata (languages, frameworks, dependency graphs, ignored files, etc.), and presents a readable report.  
+**work** is a lightweight, command‑line tool that scans any codebase, extracts key metadata (languages, frameworks, dependency graphs, ignored files, etc.), and presents a readable report.
 It’s especially handy for project onboarding, migration planning, or when you need a quick health check of an unfamiliar repository.
 
-> **Why use work?**  
-> • Detects the languages and tech stack used in a project.  
-> • Flags unnecessary files/directories that should be cleaned up.  
-> • Produces a high‑level overview of your repository’s structure.  
+> **Why use work?**
+> • Detects the languages and tech stack used in a project.
+> • Flags unnecessary files/directories that should be cleaned up.
+> • Produces a high‑level overview of your repository’s structure.
 > • Acts as a foundation for automated documentation, CI/CD linting, or dependency audits.
 
 ---
@@ -42,26 +42,26 @@ It’s especially handy for project onboarding, migration planning, or when you 
 
 ## 🛠 Tech Stack
 
-- **Languages**  
+- **Languages**
   - Python
 
-- **Frameworks & Libraries**  
-  - `gitpython` – Git interactions  
-  - `ollama` – (optional) integration for future LLM features  
-  - `yaml` – parsing YAML files  
+- **Frameworks & Libraries**
+  - `gitpython` – Git interactions
+  - `ollama` – (optional) integration for future LLM features
+  - `yaml` – parsing YAML files
   - `argparse` – CLI argument parsing
 
-- **Technologies**  
-  - ASP.NET (detected if present)  
-  - Actix (Rust)  
-  - Angular  
-  - Blockchain – recognized if relevant files found  
-  - CI/CD – pipeline files detected  
-  - Data Science – Jupyter notebooks, pandas, etc.  
-  - Django  
-  - Docker – detected via `Dockerfile` (if present)  
-  - Echo (Go)  
-  - Electron  
+- **Technologies**
+  - ASP.NET (detected if present)
+  - Actix (Rust)
+  - Angular
+  - Blockchain – recognized if relevant files found
+  - CI/CD – pipeline files detected
+  - Data Science – Jupyter notebooks, pandas, etc.
+  - Django
+  - Docker – detected via `Dockerfile` (if present)
+  - Echo (Go)
+  - Electron
 
 > **Note** – The tool will only report on what it actually finds; the above list is the full set of patterns it can match.
 
@@ -77,7 +77,7 @@ It’s especially handy for project onboarding, migration planning, or when you 
 | **Git** | Any | `sudo apt install git` (Linux) / `brew install git` (macOS) |
 | **Python packages** | Auto‑installed | `pip install -r requirements.txt` |
 
-> **Why Python 3.12?**  
+> **Why Python 3.12?**
 > The tool requires the latest type‑hints and pattern matching features introduced in 3.12. If you’re on an older distribution, upgrade Python first.
 
 ### Installation
@@ -99,7 +99,7 @@ pip install -r requirements.txt
 
 ### Configuration
 
-`work` is a zero‑config tool; it will auto‑detect everything in the current working directory.  
+`work` is a zero‑config tool; it will auto‑detect everything in the current working directory.
 If you want to exclude custom directories or files, edit the `IGNORE_PATTERNS` dictionary in `main.py` and run again.
 
 ---
@@ -114,9 +114,9 @@ python main.py
 
 The tool will:
 
-1. Walk the current directory recursively.  
-2. Skip anything listed in `IGNORE_PATTERNS`.  
-3. Detect file extensions, languages, frameworks, and dependencies.  
+1. Walk the current directory recursively.
+2. Skip anything listed in `IGNORE_PATTERNS`.
+3. Detect file extensions, languages, frameworks, and dependencies.
 4. Print a concise report to stdout.
 
 ### Example Output
@@ -167,7 +167,7 @@ work/
 └── LICENSE                   # (None specified)
 ```
 
-> **Why `pyproject.toml`?**  
+> **Why `pyproject.toml`?**
 > It declares the package metadata and the required Python version (≥ 3.12). It also lists `gitpython` and `ollama` as runtime dependencies.
 
 ---
@@ -186,10 +186,10 @@ flake8 main.py
 
 ### Adding Features
 
-1. Fork the repository.  
-2. Create a branch: `git checkout -b feature/awesome-scanner`.  
-3. Commit your changes.  
-4. Push and submit a Pull Request.  
+1. Fork the repository.
+2. Create a branch: `git checkout -b feature/awesome-scanner`.
+3. Commit your changes.
+4. Push and submit a Pull Request.
 5. Include a clear description of the new feature and any updated docs.
 
 ---
@@ -198,13 +198,13 @@ flake8 main.py
 
 We welcome contributions of any size! Please follow these steps:
 
-1. **Fork** the repository.  
-2. **Create** a new feature branch:  
+1. **Fork** the repository.
+2. **Create** a new feature branch:
    ```bash
    git checkout -b feature/YourFeature
    ```
-3. **Commit** your changes (`git commit -m "Add YourFeature"`).  
-4. **Push** the branch:  
+3. **Commit** your changes (`git commit -m "Add YourFeature"`).
+4. **Push** the branch:
    ```bash
    git push origin feature/YourFeature
    ```
@@ -212,23 +212,23 @@ We welcome contributions of any size! Please follow these steps:
 
 ### Code Style
 
-- Follow PEP 8 for Python code.  
-- Use type hints (`typing`) wherever possible.  
-- Keep functions small and focused.  
+- Follow PEP 8 for Python code.
+- Use type hints (`typing`) wherever possible.
+- Keep functions small and focused.
 - Add unit tests for new functionality.
 
 ---
 
 ## 📄 License
 
-The project does not currently specify a license.  
+The project does not currently specify a license.
 If you plan to use or extend **work**, we recommend adding an MIT or Apache 2.0 license to ensure clarity for downstream users.
 
 ---
 
 ## 🆘 Support
 
-1. Search existing issues on GitHub.  
+1. Search existing issues on GitHub.
 2. If your issue is not covered, create a new issue with a detailed description, including:
    - Your operating system
    - Python version
@@ -240,8 +240,8 @@ If you plan to use or extend **work**, we recommend adding an MIT or Apache 2.
 
 ### Project Complexity
 
-- **Expert (Complexity Score: 65)**  
-- **Estimated Setup Time:** ~2 hours  
+- **Expert (Complexity Score: 65)**
+- **Estimated Setup Time:** ~2 hours
 - **Maintenance Status:** Active – new features and bug fixes are merged frequently
 
 ---
