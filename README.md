@@ -1,6 +1,6 @@
-# ReadmeMaker
+# NOVA: ReadmeMaker
 
-**ReadmeMaker** is a Python-based software designed to generate comprehensive and well-structured README.md files for various software projects. It scans codebases, identifies languages, frameworks, dependencies, and unnecessary files, producing concise reports that help developers onboard new team members or perform quick health checks on repositories.
+**NOVA: ReadmeMaker** is a Python-based software designed to generate comprehensive and well-structured README.md files for various software projects. It scans codebases, identifies languages, frameworks, dependencies, and unnecessary files, producing concise reports that help developers onboard new team members or perform quick health checks on repositories.
 
 ## 📋 Table of Contents
 
